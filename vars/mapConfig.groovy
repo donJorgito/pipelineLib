@@ -1,7 +1,8 @@
 def call() {
 
+//def cfg = configFileProvider XX
 return [
-  'agent': 'agent',
+  'agent': cfg?.agent ?: 'agent',
   'enabled': false,
   ]
 
