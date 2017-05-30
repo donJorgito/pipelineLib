@@ -1,5 +1,5 @@
-def call(String script) {
-  if (config.enabled) {
+def call(Map conf, String script) {
+  if (conf.enabled) {
     def shStdout = sh returnStdout: true, script: "${script}"
     return shStdout
   } else {
