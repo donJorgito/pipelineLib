@@ -1,7 +1,7 @@
 def call(List items) {
   node ('agent') {
-  for (def item in items) {
-    sh "echo ${item}"
+  items.each { it ->
+    sh "echo ${it}"
   }
   }
 }
