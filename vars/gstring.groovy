@@ -1,4 +1,4 @@
-def call(String ELEMENT) {
+def call(ELEMENT) {
 
         def HACK = ''
 
