@@ -1,6 +1,6 @@
 def call(List items) {
   node ('agent') {
-  items.each { it ->
+  items.each {  
     sh "echo ${it}"
   }
   }
