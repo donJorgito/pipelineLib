@@ -1,7 +1,8 @@
 def call(Map conf, String script) {
   if (conf.enabled) {
+    def shStdout 
     node ('agent') {
-      def shStdout = sh returnStdout: true, script: "${script}"
+      shStdout = sh returnStdout: true, script: "${script}"
     }
     return shStdout
   } else {
